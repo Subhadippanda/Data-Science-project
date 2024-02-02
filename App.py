@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-df=pd.read_csv(r"C:\Users\SUBHADIP\Downloads\Admission_Prediction.csv")
+df=pd.read_csv("Admission_Prediction.csv")
 df['GRE Score'].fillna(df['GRE Score'].mean(),inplace=True)
 df['TOEFL Score'].fillna(df['TOEFL Score'].mean(),inplace=True)
 df['University Rating'].fillna(df['University Rating'].mean(),inplace=True)
